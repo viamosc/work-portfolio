@@ -13,7 +13,7 @@ export const profile = {
     "",
   bio: "Graduated cum laude with a Bachelor of Science in Computer Science from the University of the Philippines Visayas. I’ve led development on government and academic projects, worked as a peer tutor for Calculus and Data Structures, and built projects across web, mobile, and hardware. I enjoy turning ideas into practical, well-designed solutions and continuously learning new technologies along the way.",
   email: "dviamoscoso@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/projects/moscosoD_resume.pdf",
   // Replace this with a real photo. Drop the file into /public and update
   // the path below, e.g. "/photo.jpg". Leave empty to keep the placeholder.
   photoUrl: "/projects/moscosoD_photo.jpg",
