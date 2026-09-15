@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --paper: #f4f7f1;
+  --ink: #1a2118;
+  --ink-soft: #4c584a;
+  --line: #d6ded0;
+  --moss: #2f6b4a;
+  --moss-deep: #1f4a33;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-moss: var(--moss);
+  --color-moss-deep: var(--moss-deep);
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jbmono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--moss);
+  color: var(--paper);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
