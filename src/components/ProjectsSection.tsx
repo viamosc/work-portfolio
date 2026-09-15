@@ -23,7 +23,7 @@ export function ProjectsSection() {
               onFocus={() => setActiveIndex(index)}
             >
               <div className="flex flex-col sm:flex-row sm:items-baseline gap-x-6 gap-y-2">
-                
+
                 {/* date */}
                 <span className="font-mono text-xs text-ink-soft w-20 shrink-0">
                   {item.period}
@@ -63,6 +63,13 @@ export function ProjectsSection() {
                           </a>
                         );
                       })}
+                    </div>
+                  )}
+
+                  {/* notes */}
+                  {item.notes && (
+                    <div className="mt-2 text-xs text-ink-soft italic">
+                      {item.notes}
                     </div>
                   )}
 

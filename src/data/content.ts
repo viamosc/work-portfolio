@@ -151,7 +151,7 @@ export const projects: {
     description:
       "A Flutter virtual pet game \u2014 built mini-games (Tic-Tac-Toe, Flappy Bird), pet lifecycle states, and local data storage.",
     tags: ["Dart", "Flutter", "Firebase"],
-    notes: "",
+    notes: "The GitHub repository used is under my school GitHub account: @darahvia",
     links: [
   { label: "GitHub", url: "https://github.com/viamosc/MPC.git", icon: FaGithub },
   { label: "Install App", url: "https://drive.google.com/file/d/1mBmcmaoFbP5-2GZwSjlVR_IZeL4Bfsde/view?usp=drive_link", icon: FiDownload },
