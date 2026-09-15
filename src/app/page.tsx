@@ -9,7 +9,7 @@ export default function Home() {
     <div className="lg:flex lg:min-h-screen">
       <Sidebar />
 
-      <main className="flex-1 px-6 py-10 lg:px-16 lg:py-14 max-w-[1080px]">
+      <main className="flex-1 px-6 py-10 lg:px-16 lg:py-14 max-w-[1440px]">
         <ProjectsSection />
         <ExperienceList />
         <AwardsList />

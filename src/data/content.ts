@@ -7,11 +7,11 @@ export type ProjectLink = { label: string; url: string; icon?: ElementType };
 
 export const profile = {
   name: "Darah Via Moscoso",
-  role: "Computer Science Student & Software Developer",
-  location: "Miagao, Iloilo, Philippines",
+  role: "Computer Science Graduate & Software Developer",
+  location: "Iloilo, Philippines",
   tagline:
-    "CS student (cum laude track) building full-stack web apps, mobile apps, and embedded systems \u2014 from a Laravel leave-management system to an ESP32-powered Sungka game.",
-  bio: "Currently finishing a BS in Computer Science at the University of the Philippines Visayas. I've led development on government and academic projects, tutor Calculus and Data Structures, and enjoy work that spans the stack: web, mobile, and hardware.",
+    "",
+  bio: "Graduated cum laude with a Bachelor of Science in Computer Science from the University of the Philippines Visayas. I’ve led development on government and academic projects, worked as a peer tutor for Calculus and Data Structures, and built projects across web, mobile, and hardware. I enjoy turning ideas into practical, well-designed solutions and continuously learning new technologies along the way.",
   email: "dviamoscoso@gmail.com",
   resumeUrl: "/resume.pdf",
   // Replace this with a real photo. Drop the file into /public and update
@@ -88,7 +88,8 @@ export const projects: {
   notes: string;
   links: ProjectLink[];
   preview: string;
-  image: string;
+  images: string[];
+  video?: string;
 }[] = [
     {
     period: "Sept 2026",
@@ -103,7 +104,7 @@ export const projects: {
   { label: "Live", url: "https://mpc-rouge.vercel.app/", icon: FiExternalLink },
     ],
     preview: "asdfasdf",
-    image: "/projects/sample.png",
+    images: ["/projects/mpc-1.png", "/projects/mpc-2.png"],
   },
   {
     period: "May 2026",
@@ -115,7 +116,7 @@ export const projects: {
     notes: "",
     links: [],
     preview: "asdfasdf",
-    image: "/projects/sample.png",
+    images: ["/projects/sample.png"],
   },
   {
     period: "Aug 2025",
@@ -126,11 +127,11 @@ export const projects: {
     tags: ["Dart", "Flutter", "Provider"],
     notes: "",
     links: [
-  { label: "GitHub", url: "https://github.com/viamosc/sungka" },
-  { label: "Install App", url: "https://drive.google.com/file/d/1BE_grr101IyXAV6umzuZVFsLDAncvXMA/view?usp=drive_link" },
+  { label: "GitHub", url: "https://github.com/viamosc/sungka", icon: FaGithub },
+  { label: "Install App", url: "https://drive.google.com/file/d/1BE_grr101IyXAV6umzuZVFsLDAncvXMA/view?usp=drive_link", icon: FiDownload },
     ],
     preview: "",
-    image: "",
+    images: ["/projects/okd-1.jpg", "/projects/okd-2.jpg"],
   },
   {
     period: "Dec 2025",
@@ -142,7 +143,7 @@ export const projects: {
     notes: "",
     links: [],
     preview: "",
-    image: "",
+    images: [""],
   },
   {
     period: "May 2025",
@@ -157,7 +158,7 @@ export const projects: {
   { label: "Install App", url: "https://drive.google.com/file/d/1mBmcmaoFbP5-2GZwSjlVR_IZeL4Bfsde/view?usp=drive_link", icon: FiDownload },
     ],
     preview: "",
-    image: "",
+    images: [""],
   },
   {
     period: "Dec 2023",
@@ -169,18 +170,21 @@ export const projects: {
     notes: "",
     links: [],
     preview: "",
-    image: "",
+    images: [""],
   },
   {
     period: "Dec 2024",
     title: "Multitape Turing Machine Simulator",
     roleLabel: "Lead Developer",
     description:
-      "A Python simulator for multitape Turing Machines, with a modular architecture separating machine logic from data structures.",
+      "A Python-based multitape Turing Machine simulator that models tape operations, state transitions, and machine execution through a modular architecture.",
     tags: ["Python", "OOP", "Automata Theory"],
-    notes: "",
-    links: [],
+    notes: "The GitHub repository used is under my school GitHub account: @darahvia",
+    links: [
+  { label: "GitHub", url: "https://github.com/viamosc/MultitapeTM", icon: FaGithub },
+  { label: "Live", url: "https://mpc-rouge.vercel.app/", icon: FiExternalLink },
+    ],
     preview: "",
-    image: "",
+    images: [""],
   },
 ];

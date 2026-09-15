@@ -8,7 +8,7 @@ export function AwardsList() {
         {awards.map((item) => (
           <li
             key={item.title}
-            className="border-t border-line py-4 first:pt-0 flex flex-col sm:flex-row sm:items-baseline gap-x-6 gap-y-1"
+            className="border-t border-line py-4 flex flex-col sm:flex-row sm:items-baseline gap-x-6 gap-y-1"
           >
             <span className="font-mono text-xs text-ink-soft w-14 shrink-0">
               {item.period}
