@@ -16,7 +16,7 @@ export const profile = {
   resumeUrl: "/resume.pdf",
   // Replace this with a real photo. Drop the file into /public and update
   // the path below, e.g. "/photo.jpg". Leave empty to keep the placeholder.
-  photoUrl: "",
+  photoUrl: "/projects/moscosoD_photo.jpg",
   links: [
     {
       label: "LinkedIn",

@@ -17,7 +17,7 @@ function Photo() {
       <img
         src={profile.photoUrl}
         alt={profile.name}
-        className="w-20 h-20 object-cover border border-line"
+        className="object-cover border border-line"
       />
     );
   }
