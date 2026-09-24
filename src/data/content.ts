@@ -92,7 +92,7 @@ export const projects: {
   video?: string;
 }[] = [
     {
-    period: "Sept 2026",
+    period: "Aug 2026",
     title: "Miagao Pickleball Club Queueing System",
     roleLabel: "Lead Full-Stack Developer",
     description:
@@ -106,6 +106,31 @@ export const projects: {
     preview: "asdfasdf",
     images: ["/projects/mpc-1.png", "/projects/mpc-2.png"],
   },
+
+    {
+    period: "Aug 2026",
+    title: "Bloom Daily",
+    roleLabel: "Lead Full-Stack Developer",
+    description:
+      "Built a full-stack daily productivity app featuring journaling, custom routines, task tracking, and focused work sessions, powered by Next.js Server Actions, PostgreSQL, Supabase Auth, and a responsive timetable view with habit streaks.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Server Actions",
+    ],
+    notes: "",
+    links: [
+  { label: "GitHub", url: "https://github.com/viamosc/bloom-daily.git", icon: FaGithub },
+  { label: "Live", url: "https://bloom-daily-mu.vercel.app/", icon: FiExternalLink },
+    ],
+    preview: "",
+    images: ["/projects/mpc-1.png", "/projects/mpc-2.png"],
+  },
+
   {
     period: "May 2026",
     title: "Automated Course Timetabling Using UniTime",
