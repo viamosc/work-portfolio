@@ -128,7 +128,7 @@ export const projects: {
   { label: "Live", url: "https://bloom-daily-mu.vercel.app/", icon: FiExternalLink },
     ],
     preview: "",
-    images: ["/projects/mpc-1.png", "/projects/mpc-2.png"],
+    images: ["/projects/bd-1.png", "/projects/bd-2.png"],
   },
 
   {
@@ -141,7 +141,7 @@ export const projects: {
     notes: "",
     links: [],
     preview: "asdfasdf",
-    images: ["/projects/sample.png"],
+    images: [],
   },
   {
     period: "Aug 2025",
