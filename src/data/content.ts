@@ -103,7 +103,7 @@ export const projects: {
   { label: "GitHub", url: "https://github.com/viamosc/MPC.git", icon: FaGithub },
   { label: "Live", url: "https://mpc-rouge.vercel.app/", icon: FiExternalLink },
     ],
-    preview: "asdfasdf",
+    preview: "",
     images: ["/projects/mpc-1.png", "/projects/mpc-2.png"],
   },
 
