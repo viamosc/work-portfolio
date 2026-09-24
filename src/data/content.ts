@@ -140,7 +140,7 @@ export const projects: {
     tags: ["Java", "UniTime", "Constraint Programming"],
     notes: "",
     links: [],
-    preview: "asdfasdf",
+    preview: "",
     images: [],
   },
   {
