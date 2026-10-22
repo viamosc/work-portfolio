@@ -4,6 +4,18 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { FiDownload } from "react-icons/fi";
 export type ProjectLink = { label: string; url: string; icon?: ElementType };
+export type Project = {
+  period: string;
+  title: string;
+  roleLabel: string;
+  description: string;
+  tags: string[];
+  notes: string;
+  links: ProjectLink[];
+  preview: string;
+  images: string[];
+  video?: string;
+};
 
 export const profile = {
   name: "Darah Via Moscoso",
@@ -78,6 +90,32 @@ export const awards = [
 // "image" is a screenshot shown in the preview panel on the right when
 // this project is hovered. Drop an image into /public/projects/ and point
 // to it, e.g. "/projects/sungka.png". Leave it empty for a plain
+export const professionalProjects: Project[] = [
+  {
+    period: "Sept 2026-Oct 2026",
+    title: "CIM Creatives",
+    roleLabel: "Full-Stack Developer",
+    description:
+      "Enhanced and maintained an existing e-commerce application, implementing payment gateway and courier service integrations, role-based dual views for separate user types, and promotional features such as Buy N Get N and discounted pricing. Resolved bugs and stability issues in the existing codebase and delivered ongoing UI and content updates based on stakeholder requirements.",
+    tags: ["Confidential"],
+    notes: "Full-Stack Developer · Confidential Client",
+    links: [],
+    preview: "",
+    images: [],
+  },
+  {
+    period: "Jun–Jul 2025",
+    title: "Employee Leave and Credit Management System",
+    roleLabel: "Lead Full-Stack Developer",
+   description:
+  "Led the development of a Laravel and MySQL-based Employee Leave and Credit Management System for DepEd Cadiz City, implementing leave management modules, automated credit calculations, balance validation, transaction tracking, and PDF report generation.",
+    tags: ["Laravel", "PHP", "MySQL", "SQL", "Laravel DomPDF"],
+    notes: "IT Department Intern · Department of Education, Cadiz City, Negros Occidental",
+    links: [],
+    preview: "",
+    images: [],
+  },
+];
 // placeholder.
 export const projects: {
   period: string;

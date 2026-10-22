@@ -2,6 +2,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ExperienceList } from "@/components/ExperienceList";
 import { AwardsList } from "@/components/AwardsList";
+import { professionalProjects } from "@/data/content";
 import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
@@ -10,7 +11,14 @@ export default function Home() {
       <Sidebar />
 
       <main className="flex-1 px-6 py-10 lg:px-16 lg:py-14 max-w-[1440px]">
+      <ProjectsSection
+        id="professional-projects"
+        heading="Professional Experience"
+        items={professionalProjects}
+      />
+      <div className="mt-16">
         <ProjectsSection />
+      </div>
         <ExperienceList />
         <AwardsList />
 

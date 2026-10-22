@@ -3,19 +3,27 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { projects } from "@/data/content";
+import { projects as personalProjects, type Project } from "@/data/content";
 
-export function ProjectsSection() {
+export function ProjectsSection({
+  id = "projects",
+  heading = "My Personal Projects",
+  items = personalProjects,
+}: {
+  id?: string;
+  heading?: string;
+  items?: Project[];
+}) {
   const [activeIndex, setActiveIndex] = useState(0);
-  const active = projects[activeIndex];
+  const active = items[activeIndex];
 
   return (
-    <section id="projects" className="scroll-mt-14">
-      <h2 className="font-serif text-xl text-ink mb-6">Projects</h2>
+    <section id={id} className="scroll-mt-14">
+      <h2 className="font-serif text-xl text-ink mb-6">{heading}</h2>
 
       <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_550px] xl:gap-14">
         <ul className="flex flex-col max-w-2xl">
-          {projects.map((item, index) => (
+          {items.map((item, index) => (
           <li
             key={item.title}
             className={`border-t border-line py-6 cursor-pointer transition-colors ${
